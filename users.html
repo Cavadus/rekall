@@ -1,0 +1,45 @@
+<html>
+
+	<head>
+		<title>Login page</title>
+	</head>
+	
+	<body>
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script>
+		
+		<script>
+		   $(document).ready(function(){
+		   var xml;
+		  $('#b1').click(function(){
+			   $.get('usersFile.xml', null, function (data, textStatus) {
+				   xml=data;
+					$(xml).find('user').each( function(){
+						var item = $(this);
+
+						if(item.find('username').text()==$('#userid').val() && item.find('password').text()==$('#pwd').val())
+						{
+							window.open('success.html');
+						}
+				   });
+				});
+			});
+		});
+			</script>
+		
+	
+		<div align="right">
+
+		Username: &nbsp <input type="text" id="userid" name="userid"/><br><br>
+		Password:  &nbsp  <input type="password" id="pwd" name="password"/><br><br>
+		
+		<input type="button" id="b1" value="Login"/>
+		
+		<input type="reset" value="Cancel"/>
+		
+		</div>
+		
+	</body>
+	
+</html>

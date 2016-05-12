@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<products>
+
+
+		<product category="Single Implant">
+			<scenario1>Relaxing Vacation (Non EgoTrip implant cost: $150)</scenario1>
+			<location1>Buenos Aires, Argentina (Location free)</location1>
+			<companions1>Free Celebrity Profile: Megan Fox (Single implant includes 1 free profile of your choice.)</companions1>
+			<duration1>5 Days (Cost of single day included, extra days are $25.  Total: $100</duration1>
+			<total1>$250</total1>
+		</product>
+		
+		<product category="Group Implant">
+			<scenario2>Scale Mount Kilamanjaro with 5 of your buddies!(Group rate brings individual implant cost to $75 each.  Total cost: $375)</scenario2>
+			<location2>Moshi, Tanzania</location2>
+			<companions2>Celebrity Profiles: Betty White and Cloris Leachman(Group implants get two free celebrity companions)</companions2>
+			<duration2>5 days (1 day still included, group rate days are $25 per extra day. Total: $100</duration2>
+			<total2>$475</total2>
+		</product>
+		
+		<product category="EgoTrip Implant">
+			<scenario3>Super Secret Agent, on a dangerous mission to stop terrorist attacks. (EgoTrips cost a bit extra.  Implant cost $200) </scenario3>
+			<location3>Dublin, Ireland</location3>
+			<companions3>Celebrity Profile: Adam West</companions3>
+			<duration3>5 days (EgoTrip does not include any free days.  Cost per day is $20 each.  Total: $100</duration3>
+			<total3>$300</total3>
+		</product>
+
+
+</products>

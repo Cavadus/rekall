@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<faqcontent>
+
+
+		<questions category="General">
+			<question>Are EgoTrips safe?</question>
+			<answer>Of course EgoTrips are safe! If they weren't would the USDA allow us to even operate?</answer>
+		</questions>
+
+		<questions category="General">
+			<question>How much does it cost?</question>
+			<answer>It's crazy cheap!  Cheaper than a real vacation.  Buy 10; give'em to your friends!</answer>
+		</questions>
+		
+		<questions category="General">
+			<question>How long does it take?</question>
+			<answer>It's super quick; don't worry about a thing.  EgoTrip implantation takes less than half an hour.</answer>
+		</questions>
+
+		<questions category="EgoTrip">
+			<question>Can I go to any location I choose?</question>
+			<answer>We have over 41,000 existing destinations to choose from.  I'm sure we can find one you'd like.</answer>
+		</questions>
+		
+		<questions category="EgoTrip">
+			<question>Can my friends come along with me?</question>
+			<answer>Heck yeah!  Group EgoTrips are very common and all of your memories will be completely synced.</answer>
+		</questions>
+		
+		<questions category="EgoTrip">
+			<question>Can I have celebrities in my EgoTrip?</question>
+			<answer>You sure can!  We have contracts with hundreds of actors, actresses, musicians, world leaders, and adult film stars.</answer>
+		</questions>
+		
+		<questions category="EgoTrip">
+			<question>Do I have to be myself?</question>
+			<answer>We understand that some people seek a little more of an adventure on their EgoTrip.  That's why one of our most popular features, called "Personas," which allows the user to take on a multitude of fun and exciting roles such as secret agent, war hero, jedi, celebrity, and more!</answer>
+		</questions>
+		
+		<questions category="EgoTrip">
+			<question>What are the payment options?</question>
+			<answer>The best way to transfer funds is via Paypal. This secure platform ensures timely payments and a secure environment.</answer>
+		</questions>
+
+	
+</faqcontent>
