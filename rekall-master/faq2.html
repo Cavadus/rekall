@@ -65,41 +65,33 @@
 
 			<br />
 			
-			<div id="primeDiv"><h1>Page title should be repeated here.</h1>
-		
-				<button type="button" onclick="loadDoc()">Change Content</button>
 			
+			<div id="contentDiv">
+				<b>Question</b> <span id="question"></span><br />
+				<b>Answer</b> <span id="answer"></span><br />
+				<b>Question</b> <span id="question"></span><br />
+				<b>Answer</b> <span id="answer"></span><br />
 			</div>
+
 			
-			<div id="contentDiv"><strong>Page content here.</strong></div>
 			
-			<script>
-			
-				function loadDoc() {
-				  var xhttp = new XMLHttpRequest();
-				  xhttp.onreadystatechange = function() {
-					if (xhttp.readyState == 4 && xhttp.status == 200) {
-					  myFunction(xhttp);
-					}
-				  };
-				  xhttp.open("GET", "faq.xml", true);
-				  xhttp.send();
-				}
-				function myFunction(xml) {
-				  var i;
-				  var xmlDoc = xml.responseXML;
-				  var table="<table><tr><th>Question</th><th>Answer</th></tr>";
-				  var x = xmlDoc.getElementsByTagName("questions");
-				  for (i = 0; i <x.length; i++) { 
-					table += "<tr><td>" + x[i].getElementsByTagName("question")[0].childNodes[0].nodeValue + 
-					"</td><td>"+ 
-					x[i].getElementsByTagName("answer")[0].childNodes[0].nodeValue + 
-					"</td></tr>";
+			<script type="text/javascript">
+				if (window.XMLHttpRequest)
+				  {// code for IE7+, Firefox, Chrome, Opera, Safari
+				  xmlhttp=new XMLHttpRequest();
 				  }
-				  table+="</table>";
-				  document.getElementById("contentDiv").innerHTML = table;
-				}
-				
+				else
+				  {// code for IE6, IE5
+				  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				  }
+				xmlhttp.open("GET","faq.xml",false);
+				xmlhttp.send();
+				xmlDoc=xmlhttp.responseXML;
+				 
+				document.getElementById("question").innerHTML=
+				xmlDoc.getElementsByTagName("question")[0].childNodes[0].nodeValue;
+				document.getElementById("answer").innerHTML=
+				xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue;
 			</script>
 		
 		</div>

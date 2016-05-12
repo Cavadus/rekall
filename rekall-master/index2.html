@@ -35,7 +35,7 @@
   <body>
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  
+  <script src="js/w3-include-HTML.js"></script>
   <script>
 	  $(document).ready(function(){
 	   var xml;
@@ -47,11 +47,27 @@
 
 					if(item.find('username').text()==$('#userid').val() && item.find('password').text()==$('#pwd').val())
 					{
-						window.open('success.html');
+						window.open('index3.html');
 					}
 			   });
 			});
 		});
+	});
+	$(document).ready(function() {
+		$('.details-1').hide();
+		$('.details-2').hide();
+		$('.details-3').hide();
+	});
+	$(document).ready(function(){
+    $('#button1').click(function(){
+        $('.details-1').slideToggle("slow");
+    });
+	$('#button2').click(function(){
+        $('.details-2').slideToggle("slow");
+    });
+	$('#button3').click(function(){
+        $('.details-3').slideToggle("slow");
+    });
 	});
   </script>
   
@@ -115,25 +131,34 @@
 
     <div class="container marketing">
 
-      <!-- Three columns of text below the carousel -->
+     <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
           <img class="img-circle" src="img/zack.jpg" alt="photos provided by: https://s-media-cache-ak0.pinimg.com/236x/08/ea/08/08ea08b07f4bbf124ca4685e9bdf9ea0.jpg" width="140" height="140">
           <h2>Zack Morris, 15</h2>
           <p>Zack has terminal cancer.  With his final days passing he selected an implant that would simulate a normal highschool experience in Palisades, California.  His implant was filled with his six closest friends and simulated experiences from highschool all the way into college. </p>
-          <p><a class="btn btn-default" href="underConstruction.html" role="button">View details &raquo;</a></p>
+          <p><button id="button1" >&varr; View details &varr;</button>
+		  </p>
+		  <div class="details-1">
+			<h3>Implant Details</h3>
+			<h4>Role:</h4>
+		  </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="img/olelady.jpg" alt="photo provided by: http://cdn.resimkoy.xyz/2016/02/16/pin-funny-old-lady-on-pinterest.jpg" width="140" height="140">
           <h2>Ethel Pumpernikel, 112</h2>
           <p>Ethel is a mother of 5, grandmother of 12 and greatgrandmother of 30.  She loves spending time with her immense family but needed a getaway.  She choose a relaxing vacation in a tropical paradise completely customized to her liking.</p>
-          <p><a class="btn btn-default" href="underConstruction.html" role="button">View details &raquo;</a></p>
+          <p><button id="button2" >&varr; View details &varr;</button>
+		  </p>
+		  <h3 class="details-2">hello</h3>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="img/hubert.jpg" alt="photos provided by: http://anpsthemes.com/move/wp-content/uploads/2013/12/photodune-4282952-nerdy-businessman-m.jpg" width="140" height="140">
           <h2>Hubert J. Pharnsworth, 35</h2>
           <p>Hubert is a hard working physicist.  Always at hard at work in his labe barely seeing the light of day.  Hubert chose an exciting adventure.  Taking up the role of secret agent on a mission to stop dangerous terrorists.</p>
-          <p><a class="btn btn-default" href="underConstruction.html" role="button">View details &raquo;</a></p>
+          <p><button id="button3" >&varr; View details &varr;</button>
+		  </p>
+		  <p class="details-3">hello</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 

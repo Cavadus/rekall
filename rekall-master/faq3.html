@@ -65,26 +65,29 @@
 
 			<br />
 			
-			<div id="primeDiv"><h1>Page title should be repeated here.</h1>
-		
-				<button type="button" onclick="loadDoc()">Change Content</button>
 			
+			<div id="contentDiv">
+				<b>Question</b> <span id="question"></span><br />
+				<b>Answer</b> <span id="answer"></span><br />
+				<b>Question</b> <span id="question"></span><br />
+				<b>Answer</b> <span id="answer"></span><br />
 			</div>
+
 			
-			<div id="contentDiv"><strong>Page content here.</strong></div>
 			
-			<script>
-			
-				function loadDoc() {
-				  var xhttp = new XMLHttpRequest();
-				  xhttp.onreadystatechange = function() {
-					if (xhttp.readyState == 4 && xhttp.status == 200) {
-					  myFunction(xhttp);
-					}
-				  };
-				  xhttp.open("GET", "faq.xml", true);
-				  xhttp.send();
-				}
+			<script type="text/javascript">
+				if (window.XMLHttpRequest)
+				  {// code for IE7+, Firefox, Chrome, Opera, Safari
+				  xmlhttp=new XMLHttpRequest();
+				  }
+				else
+				  {// code for IE6, IE5
+				  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				  }
+				xmlhttp.open("GET","faq.xml",false);
+				xmlhttp.send();
+				xmlDoc=xmlhttp.responseXML;
+				 
 				function myFunction(xml) {
 				  var i;
 				  var xmlDoc = xml.responseXML;
@@ -98,8 +101,6 @@
 				  }
 				  table+="</table>";
 				  document.getElementById("contentDiv").innerHTML = table;
-				}
-				
 			</script>
 		
 		</div>
